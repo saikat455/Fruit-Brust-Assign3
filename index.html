@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  <title>Navbar with Tailwind CSS</title>
+</head>
+<body>
+  <nav class=" bg-orange-500 m-6 flex items-center justify-between px-6 py-4 rounded-lg  text-white">
+    <!-- Left side links -->
+    <div class="flex items-center space-x-6">
+      <a href="#" class="hover:text-yellow-300">Home</a>
+      <a href="#" class="hover:text-yellow-300">About Us</a>
+      <a href="#" class="hover:text-yellow-300">Shop</a>
+      <a href="#" class="hover:text-yellow-300">All Fruits</a>
+    </div>
+
+    <!-- Middle content with icon -->
+    <div class="hidden md:flex items-center space-x-4">
+      <span class="text-xl font-bold">Fruit Brust</span>
+      <i class="fas fa-apple-alt text-2xl"></i>
+    </div>
+
+    <!-- Right side search box -->
+    <div class="hidden md:flex items-center space-x-4">
+      <div class="relative">
+        <input type="text" placeholder="Search here" class="px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none">
+        <i class="fas fa-search absolute top-2 right-3 text-gray-600"></i>
+      </div>
+    </div>
+
+    <!-- Mobile view dropdown menu -->
+    <div class="md:hidden relative">
+      <input type="checkbox" id="menuCheckbox" class="hidden">
+      <label for="menuCheckbox" class="cursor-pointer">
+        <i class="fas fa-bars text-2xl"></i>
+      </label>
+      <div class="hidden absolute top-14 right-0 bg-orange-600 rounded-lg mt-2 py-2 space-y-2">
+        <div class="flex items-center space-x-4">
+          <span class="text-xl font-bold">Fruit Brust</span>
+          <i class="fas fa-apple-alt text-2xl"></i>
+        </div>
+        <div class="relative">
+          <input type="text" placeholder="Search here" class="px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none">
+          <i class="fas fa-search absolute top-2 right-3 text-gray-600"></i>
+        </div>
+        <a href="#" class="block px-4 py-2 hover:text-yellow-300">Home</a>
+        <a href="#" class="block px-4 py-2 hover:text-yellow-300">About Us</a>
+        <a href="#" class="block px-4 py-2 hover:text-yellow-300">Shop</a>
+        <a href="#" class="block px-4 py-2 hover:text-yellow-300">All Fruits</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carousel w-full space-y-4">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="banner1.png" class="w-full" />
+      <div class="carousel-text absolute text-center top-1/2 w-full transform -translate-y-1/2">
+        <p class="text-white text-4xl font-extrabold ">Exotic tastes at your <br> doorstep</p>
+        <p class="text-white">We supply highly quality organic products</p>
+        <a href="#slide4" class=" rounded-full p-2 bg-white text-black mt-8">Shop Now</a>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="banner2.png" class="w-full" />
+      <div class="carousel-text absolute text-center top-1/2 w-full transform -translate-y-1/2">
+        <p class="text-white text-4xl font-extrabold">Exotic tastes at your <br> doorstep</p>
+        <p class="text-white">We supply highly quality organic products</p>
+        <a href="#slide1" class="rounded-full p-2 bg-white text-black mt-4">Shop Now</a>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="banner3.png" class="w-full" />
+      <div class="carousel-text absolute text-center top-1/2 w-full transform -translate-y-1/2">
+        <p class="text-white text-4xl font-extrabold">Exotic tastes at your <br>doorstep</p>
+        <p class="text-white">We supply highly quality organic products</p>
+        <a href="#slide2" class="rounded-full p-2 bg-white text-black mt-4">Shop Now</a>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="banner4.png" class="w-full" />
+      <div class="carousel-text absolute text-center top-1/2 w-full transform -translate-y-1/2">
+        <p class="text-white text-4xl font-extrabold">Exotic tastes at your <br>doorstep</p>
+        <p class="text-white">We supply highly quality organic products</p>
+        <a href="#slide3" class="mt-4 rounded-full p-2 bg-white text-black ">Shop Now</a>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</body>
+</html>
