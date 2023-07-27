@@ -147,7 +147,7 @@
               
           
             <!-- Second section with fruit images (hidden on medium and smaller screens) -->
-            <section class="absolute items-center justify-center hidden gap-3 p-4 bg-white border-2 md:flex right-60 -bottom-40">
+            <section class="absolute items-center justify-center hidden gap-3 p-4 bg-white border-2 md:flex right-60 -bottom-32">
               <div class="text-center text-black">
                 <img src="fruit1.png" alt="">
                 <p>Strawberry</p>
@@ -557,39 +557,41 @@
     
   </main>
  
-  <footer>
-    <footer class="p-10 footer footer-center bg-base-200 text-base-content">
-      <div class="flex text-center">
-        <div class="mt-1">
-          <img src="logo.png" alt="Icon" class="w-6 h-6 mx-auto">
-        </div>
-        <p class="text-3xl font-bold text-white ">Fruit Brust</p>
+  <footer class="p-10 footer footer-center bg-base-200 text-base-content">
+    <div class="flex text-center">
+      <div class="mt-1">
+        <img src="logo.png" alt="Icon" class="w-6 h-6 mx-auto">
       </div>
-      <div class="grid gap-5 text-white lg:grid-cols-6 md:grid-cols-4 ">
-        <a class="link link-hover">Home</a>
-        <a class="link link-hover">About us</a> 
-        <a class="link link-hover">Shop</a> 
-        <a class="link link-hover">All Fruits</a> 
+      <p class="text-3xl font-bold text-white ">Fruit Brust</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 sm:justify-start">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">About Us</a>
+      <a class="link link-hover">Shop</a>
+      <a class="link link-hover">All Fruits</a>
+      <div class="hidden gap-3 sm:flex sm:items-center">
         <a class="link link-hover">Support</a>
         <a class="link link-hover">My Account</a>
-      </div> 
-      
-      
-      
-      
-    
-      <div>
-        <div class="grid grid-flow-col gap-6">
-          <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-apple fa-2xl" style="color: #ffffff;"></i>
-        </div>
-      </div> 
-    </footer>
+      </div>
+    </div>
+  
+    <div class="flex justify-center sm:hidden">
+      <a class="link link-hover">Support</a>
+      <a class="link link-hover">My Account</a>
+    </div>
+  
+    <div class="flex justify-center sm:text-center">
+      <div class="grid grid-flow-col gap-6">
+        <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-apple fa-2xl" style="color: #ffffff;"></i>
+      </div>
+    </div>
   </footer>
+
   
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </body>
